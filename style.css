@@ -222,6 +222,68 @@ footer {
   border-radius: 100%;
 }
 .hamburger-icon:hover {
-  color: #1c1919;
+  color: #fff;
   background-color: grey;
 }
+
+
+/*Responsive Design*/
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Reverse the order of elements */
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%; /* Make sections take up full width */
+    padding: 20px;
+  }
+
+  .left-section h1 {
+    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .left-section p,
+  .left-section button {
+    font-size: 1.2rem; /* Adjust paragraph and button size */
+  }
+
+  .right-section img {
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+    border-bottom: 2px solid wheat;
+    border-bottom-left-radius: 50% ;
+    border-radius: 50%; /* Center image horizontally */
+  }
+
+  .hamburger-icon {
+    display: block;
+    color:black /* Show hamburger menu icon */
+  }
+}
+/* Footer Positioning */
+
+body {
+  display: flex;
+  min-height: 100vh; /* Ensures footer stays at bottom */
+  flex-direction: column; /* Stacks footer at bottom */
+}
+
+footer {
+  /* justify-content: flex-end; Positions footer at bottom */
+  background: transparent;
+}
+
+/* Hamburger Menu Icon Positioning */
+
+.hamburger-icon {
+  position: fixed; /* Fixes icon to top right */
+  top: 15px;
+  right: 15px;
+  z-index: 10; /* Ensures icon stays above other elements */
+  color:#000
+}
+
+/* Media Queries for smaller screens can be adjusted accordingly */
