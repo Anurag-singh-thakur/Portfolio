@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5d92bd;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .skill {
+    flex: 1 0 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(234, 235, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    position: relative;
+  width: 300px; /* Adjust as needed */
+  }
+
+  .skill img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  .skill:hover img {
+    transform: scale(1.2); /* Adjust scale factor as needed */
+  }
+  
+
+
+  
+
+  .skill h2 {
+    margin-top: 0;
+  }
+
+  .hamburger-icon {
+    position: absolute; /* Position the hamburger icon absolutely */
+    top: 15px; /* Adjust the distance from the top */
+    right: 15px; /* Adjust the distance from the right */
+    font-weight: 600;
+    font-size: 24px; /* Adjust the font size as needed */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 45px; /* adjust this according to your layout */
+    right: 33px; /* adjust this according to your layout */
+    background: none;
+        min-width: 150px;
+    border: 2px solid #1c1919;
+    border-radius: 8px;
+    
+    z-index:10;
+    font-weight: 600;
+  }
+  #menu
+  {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 8px;
+  }
+  
+  .menu ul li {
+    padding: 8px 8px;
+  }
+  
+  .menu ul li a {
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  .close-icon {
+    float: left;
+    cursor: pointer;
+    scale: 1.5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+  }
+  .hamburger-icon:hover
+{
+    
+  color: #1c1919;
+  background-color: grey;
+  }
+  /**/
+  /* CSS */
+
+
+

@@ -1,0 +1,87 @@
+*
+{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Style the navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Style the container */
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Style the logo */
+.logo {
+    flex-grow: 0;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo height as needed */
+    display: inline;
+    margin-left: 40px;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Hamburger menu icon (optional, using Font Awesome) */
+.nav-icon {
+    display: none; /* Hide the icon by default */
+}
+
+.nav-icon i {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .nav-list {
+        display: none;
+    }
+   .nav-icon {
+        display: block; /* Show the icon when screen width is 768px or less */
+    }
+   .navbar {
+        justify-content: flex-end; /* Align the icon to the right */
+    }
+}

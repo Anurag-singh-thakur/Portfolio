@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CAF4FF; /* Background color */
+}
+
+.contact-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFF9D0;/* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
+.hamburger-icon {
+    position: absolute; /* Position the hamburger icon absolutely */
+    top: 15px; /* Adjust the distance from the top */
+    right: 15px; /* Adjust the distance from the right */
+    font-weight: 600;
+    font-size: 24px; /* Adjust the font size as needed */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 45px; /* adjust this according to your layout */
+    right: 33px; /* adjust this according to your layout */
+    background: none;
+        min-width: 150px;
+    border: 2px solid #1c1919;
+    border-radius: 8px;
+    
+    z-index:10;
+    font-weight: 600;
+  }
+  #menu
+  {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 8px;
+  }
+  
+  .menu ul li {
+    padding: 8px 8px;
+  }
+  
+  .menu ul li a {
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  .close-icon {
+    float: left;
+    cursor: pointer;
+    scale: 1.5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+  }
+  .hamburger-icon:hover
+{
+    
+  color: #1c1919;
+  background-color: grey;
+  }
+
+  /*popup css */
+  .btn
+  {
+      padding: 10px 70px;
+      background: blue;
+      border: 0;
+      
+      outline: none;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: 500;
+      border-radius: 30px;
+  }
+    
+  .popup
+  {
+      width: 440px;
+      /* height: 300px; */
+      background: rgb(113, 152, 176);
+      border-radius: 8px;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50% , -50%) scale(0.1);
+      visibility: hidden;
+      text-align: center;
+      padding: 0px 8px 8px;
+      color: #333;
+      transition: transform 0.4s , top 0.4s;
+  }
+
+
+  .open-popup
+{
+    visibility: visible;
+    top: 65%;
+    transform: translate(-50% , -50%) scale(1);
+    
+}
+.popup img
+{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+.popup h2
+{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button
+{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}

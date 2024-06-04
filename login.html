@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/signup</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="hamburger-icon">&#9776;</div>
+    <div id="menu" class="menu">
+      <span class="close-icon">&times;</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">MySkills</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="login.html">Login/signup</a></li>
+      </ul>
+    </div>
+    <div class="contact-form-container">
+      <h2>Login/signUp</h2>
+      <form id="loginform" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number</label>
+          <input
+            type="tel"
+            id="contact-number"
+            name="contact-number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button id="submit" type="submit" class="btn" onclick="openPopup()" disabled>
+          Login
+        </button>
+        <div class="popup" id="popup">
+          <img src="404-tick.png" alt="" />
+          <h2>Thank You!</h2>
+          <p>Form has been submitted successfully</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
